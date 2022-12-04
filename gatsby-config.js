@@ -13,7 +13,7 @@ module.exports = {
       resolve : `gatsby-source-filesystem`,
       options :{
         name : `posts`,
-        path : `${__driname/src/posts}`
+        path : `${__dirname}/src/posts`
       },
     },
 
@@ -21,14 +21,14 @@ module.exports = {
       resolve : `gatsby-source-filesystem`,
       options :{
         name : `images`,
-        path : `${__driname/src/images}`
+        path : `${__dirname}/src/images`
       },
     },
     {
       resolve : `gatsby-source-filesystem`,
       options :{
         name : `pages`,
-        path : `${__driname/src/pages}`
+        path : `${__dirname}/src/pages`
       },
     },
     'gatsby-plugin-sharp',
@@ -59,7 +59,7 @@ module.exports = {
         display : "swap",
       },
     },
-    
+
 
 
   ],
