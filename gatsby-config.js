@@ -31,6 +31,23 @@ module.exports = {
         path : `${__driname/src/pages}`
       },
     },
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions : [ `.md`,`.mdx`],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+             maxWidth : 1200,
+             
+            },
+          },
+        ],
+      },
+    },
 
 
   ],
